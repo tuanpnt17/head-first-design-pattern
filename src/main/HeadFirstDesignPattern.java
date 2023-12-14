@@ -6,6 +6,8 @@ this template
  */
 package main;
 
+import com.tuanpnt17.ChocolateBoiler;
+
 /**
  *
  * @author TuanPNTSE173039
@@ -13,6 +15,9 @@ package main;
 public class HeadFirstDesignPattern {
 
   public static void main(String[] args) {
-    System.out.println("Hello World");
+    ChocolateBoiler chocolateBoiler = ChocolateBoiler.getInstance();
+    chocolateBoiler.fill();
+    chocolateBoiler.boil();
+    chocolateBoiler.drain();
   }
 }

@@ -6,6 +6,10 @@ this template
  */
 package main;
 
+import com.tuanpnt17.PizzaStore;
+import com.tuanpnt17.newyork.NYPizzaStore;
+import com.tuanpnt17.pizza.PizzaType;
+
 /**
  *
  * @author TuanPNTSE173039
@@ -13,6 +17,8 @@ package main;
 public class HeadFirstDesignPattern {
 
   public static void main(String[] args) {
-    System.out.println("Hello World");
+
+    PizzaStore pizzaStore = new NYPizzaStore();
+    pizzaStore.orderPizza(PizzaType.CHEESE);
   }
 }
